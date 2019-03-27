@@ -1,0 +1,308 @@
+
+:root
+{
+  /* Colores */
+  --gris_oscuro:#1d252c;
+  --gris_claro:#626262;
+  --tema_oscuro:#1B2027;
+  --azul_oscuro:#026fff;
+  --azul_fondo:#056FFF;
+  /* FUENTES */
+  --Source_sans :"Source Sans Pro",sans-serif;
+  --fjalla_one :  "fjalla one",sans-serif;
+}
+
+
+
+body
+{
+  font-family: "Source Sans Pro",sans-serif;
+  margin:0;
+}
+h2
+{
+  margin:0;
+  padding:20px;
+}
+h1,h2,h3,h4,h5,h6
+{
+  font-family: "fjalla one",sans-serif;
+  font-weight: normal;
+}
+h1
+{
+  margin:0;
+
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: -.2px;
+  color:white;
+  /* text-transform:uppercase;
+  text-decoration: underline; */
+}
+h1 strong{
+ color: var(--azul_oscuro)
+}
+.header
+{
+  background-color: var(--tema_oscuro);
+  color: white;
+  display:flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+figure
+{
+  margin:0;
+}
+.menu
+{
+  height:inherit;
+}
+.header ul{
+  display:flex;
+  height:inherit;
+}
+.header ul li
+{
+  height:inherit;
+}
+.header  a
+{
+  display:flex;
+  height:inherit;
+  align-items: center;
+  padding:0 10px;
+}
+ul
+{
+  margin:0;
+  padding:0;
+  list-style: none;
+  
+}
+.link
+{
+  color:white;
+  text-decoration: none;
+}
+
+.menu
+{
+  align-items: center;
+}
+
+ /*comienza el hero*/
+
+.hero{
+  height: 300px;
+  display:flex;
+  background-color: var(--tema_oscuro);
+  align-items: center;
+  justify-content:space-between;
+}
+.hero_image
+{
+  width:500px;
+  height:300px;
+  object-fit:cover;
+}
+.portfolio
+{
+  background-color: #fafafa;
+  padding:20px;
+}
+h2
+{
+  text-transform: uppercase;
+  color: var(--azul_oscuro);
+  font-family: var(--Source_sans);
+  font-weight:bold;
+  font-size:24px;
+  margin-bottom:40px;
+  
+}
+.project
+{
+  display: flex;
+  background-color:white;
+  border:1px solid gray; 
+  border-radius: 10px;
+ 
+  margin-bottom: 15px;
+  padding:20px;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.project_title
+{
+  font-size:30px;
+  margin-top: 0;
+  margin-bottom:10px;
+}
+.project strong
+{
+  font-family:var(--fjalla_one);
+}
+.project_course, .project_date,.project_url
+{
+  margin: 10px 0;
+}
+
+.project_description
+{
+  font-size:20px;
+}
+.project_details
+{
+  width:500px;
+  
+}
+
+.project_imageContainer
+{
+  width:500px;
+}
+
+/*experiencia*/
+.experience_title
+{
+  margin-left:10px;
+}
+.experience
+{
+  display:flex;
+  flex-wrap: wrap;
+  flex-shrink:0;
+  background-color: #f4fbff;
+}
+.experience img{
+  width: 480px;
+  height:200px;
+  object-fit: cover;
+}
+.experience_container
+{
+
+  margin:10px;
+  width:480px;
+  border-radius:10px;
+  overflow: hidden;
+}
+.experience_detail
+{
+  margin:20px 40px;
+  margin-top:-40px;
+  background-color: white;
+  position:relative;
+  text-align:center;
+  padding:20px;
+}
+.experience_description
+{
+  text-align:left;
+}
+.experience_url
+{
+  border: 1px solid var(--azul_oscuro);
+  border-radius: 5px;
+  text-decoration:none;
+  padding: 5px 20px;
+  color: var(--azul_oscuro);
+}
+.contact
+{
+  background-color: var(--azul_fondo);
+  color:white;
+  height:150px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 10px;
+}
+.contact_form h3
+{
+  font-family:var(--Source_sans);
+}
+.contact_form input{
+  border-color:gray;
+  border-style:solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url("../images/mail.png");
+  background-size:15px 15px;
+  background-repeat:no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+.contact_form button{
+  display:block;
+  margin-top:10px;
+  background-color:transparent;
+  border:1px solid white;
+  color:white;
+  border-radius:5px;
+  width:100px;
+  padding:10px 0;
+  
+}
+.social_link
+{
+  width:50px;
+  height:50px;
+  margin:0 10px;
+  display: inline-block;
+  background-size:50px 50px;
+}
+.social_link.twitter
+{
+  background-image: url("../images/twitter.png");
+  
+}
+.social_link.facebook
+{
+  background-image: url("../images/facebook.png");
+ 
+}
+.social_link.github
+{
+  background-image: url("../images/git.png");
+ 
+}
+.social_link.instagram
+{
+  background-image:url("../images/instagram.png");
+
+}
+
+.footer
+{
+  background-color:var(--tema_oscuro);
+  color:white;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 10px;
+}
+.footer img{
+  vertical-align: middle;
+}
+.footer div a 
+{
+  color:white;
+}
+
+.wrapper
+{
+  
+  width:1000px;
+  
+  margin:0 auto;
+  display:inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height:inherit;
+  flex-wrap:inherit;
+}
